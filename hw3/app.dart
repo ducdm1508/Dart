@@ -78,7 +78,7 @@ void main() {
         break;
 
       case 0:
-        print("Bye 👋");
+        print("hrhrhrh");
         return;
 
       default:
