@@ -1,25 +1,19 @@
 import 'package:dotenv/dotenv.dart';
 
 import '../../Application/Interfaces/IStudentRepository.dart';
+import '../../Application/Interfaces/ICourseRepository.dart';
+import '../Persistence/SqlLite/Repositories/CourseRepository.dart';
 import '../Persistence/SqlLite/Repositories/StudentRepository.dart';
-import '../Persistence/SqlLite/db_connect.dart';
 
 final env = DotEnv()..load(['.env']);
 
 class RepositoryFactory {
+
   static IStudentRepository createStudentRepository() {
-    final dbType = env['DATABASE_TYPE'];
+    return StudentRepository();
+  }
 
-    switch (dbType) {
-      case 'sqlite':
-        DbConnection().init(env['SQLITE_PATH'] ?? 'students.db');
-        return StudentRepository();
-
-      // case 'mysql':
-      //   return StudentRepositoryMysql();
-
-      default:
-        throw Exception('Unsupported database type: $dbType');
-    }
+  static ICourseRepository createCourseRepository() {
+    return CourseRepository();
   }
 }

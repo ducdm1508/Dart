@@ -10,12 +10,6 @@ class DbConnection {
   void init(String dbPath) {
     db = sqlite3.open(dbPath);
     _createTables();
-    final result = db.select('SELECT * FROM students');
-  for (final row in result) {
-    print(row); 
-  }
-    
-    
   }
 
   void _createTables() {
@@ -30,6 +24,27 @@ class DbConnection {
         gpa REAL,
         createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+    ''');
+
+    db.execute('''
+      CREATE TABLE IF NOT EXISTS courses (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        description TEXT,
+        createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+    ''');
+
+    db.execute('''
+      CREATE TABLE IF NOT EXISTS course_registrations (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        student_id INTEGER NOT NULL,
+        course_id INTEGER NOT NULL,
+        registeredAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY(student_id) REFERENCES students(id),
+        FOREIGN KEY(course_id) REFERENCES courses(id)
       );
     ''');
   }
