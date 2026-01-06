@@ -1,0 +1,54 @@
+{
+  "roots": [
+    "hw4"
+  ],
+  "packages": [
+    {
+      "name": "hw4",
+      "version": "0.0.0",
+      "dependencies": [
+        "sqlite3"
+      ],
+      "devDependencies": []
+    },
+    {
+      "name": "sqlite3",
+      "version": "1.11.2",
+      "dependencies": [
+        "collection",
+        "ffi",
+        "js",
+        "meta",
+        "path"
+      ]
+    },
+    {
+      "name": "path",
+      "version": "1.9.1",
+      "dependencies": []
+    },
+    {
+      "name": "meta",
+      "version": "1.16.0",
+      "dependencies": []
+    },
+    {
+      "name": "js",
+      "version": "0.6.7",
+      "dependencies": [
+        "meta"
+      ]
+    },
+    {
+      "name": "ffi",
+      "version": "2.1.4",
+      "dependencies": []
+    },
+    {
+      "name": "collection",
+      "version": "1.19.1",
+      "dependencies": []
+    }
+  ],
+  "configVersion": 1
+}

@@ -1,0 +1,68 @@
+{
+  "roots": [
+    "hw5"
+  ],
+  "packages": [
+    {
+      "name": "hw5",
+      "version": "0.0.0",
+      "dependencies": [
+        "dotenv",
+        "sqlite3"
+      ],
+      "devDependencies": []
+    },
+    {
+      "name": "dotenv",
+      "version": "4.2.0",
+      "dependencies": [
+        "args",
+        "meta"
+      ]
+    },
+    {
+      "name": "args",
+      "version": "2.7.0",
+      "dependencies": []
+    },
+    {
+      "name": "meta",
+      "version": "1.17.0",
+      "dependencies": []
+    },
+    {
+      "name": "sqlite3",
+      "version": "1.11.2",
+      "dependencies": [
+        "collection",
+        "ffi",
+        "js",
+        "meta",
+        "path"
+      ]
+    },
+    {
+      "name": "js",
+      "version": "0.6.7",
+      "dependencies": [
+        "meta"
+      ]
+    },
+    {
+      "name": "path",
+      "version": "1.9.1",
+      "dependencies": []
+    },
+    {
+      "name": "collection",
+      "version": "1.19.1",
+      "dependencies": []
+    },
+    {
+      "name": "ffi",
+      "version": "2.1.4",
+      "dependencies": []
+    }
+  ],
+  "configVersion": 1
+}

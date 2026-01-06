@@ -1,0 +1,50 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "collection",
+      "rootUri": "file:///C:/Users/JpLaptop/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "ffi",
+      "rootUri": "file:///C:/Users/JpLaptop/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///C:/Users/JpLaptop/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "meta",
+      "rootUri": "file:///C:/Users/JpLaptop/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.16.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path",
+      "rootUri": "file:///C:/Users/JpLaptop/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "sqlite3",
+      "rootUri": "file:///C:/Users/JpLaptop/AppData/Local/Pub/Cache/hosted/pub.dev/sqlite3-1.11.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "hw4",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.10.7",
+  "pubCache": "file:///C:/Users/JpLaptop/AppData/Local/Pub/Cache"
+}
