@@ -11,6 +11,8 @@ class Student {
   void displayInfo() {
     print('ID: $id, Name: $name, Age: $age, Grade: $grade');
   }
+
+  serializeAndCompress() {}
 }
 
 List<Student> students = [];
